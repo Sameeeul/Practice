@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Portfo<span>lio.</span> </a>
+            <ul class="menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="intro">
+                <div class="text1 animate__animated animate__backInDown">Hello, My name is,</div>
+                <div class="text2 animate__animated animate__backInLeft  ">Ania Chowdhury</div>
+                <div class="text3 animate__animated animate__backInUp ">And I am a Web Designer...</div>
+            </div>
+            <div class="ania">
+                <img src="ania.png" alt="">
+
+
+            </div>
+        </div>
+        <div class="cvcon">
+            <div class="cv"><a href="ania.txt" download="ania.txt">Download CV</a></div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="spacing">dhdhdhdh</div>
+        <div class="whoami">
+            <h1>About <span class="ME">Me</span></h1>
+            <img src="ania2.PNG" alt="">
+            <h2>I am a <span class="typing"></span></h2>
+        </div>
+
+    </section>
+    <section class="skills" id="skills">
+        <div class="spacing">dhdhdhdh</div>
+        <div class="myskills">
+            <h1>My <span>skills</span></h1>
+        </div>
+        <div class="skillcon">
+            <li>
+                <h3>HTML</h3><span class="bar1 animate__animated animate__bounceInLeft "><span
+                        class="html"></span></span>
+            </li>
+            <li>
+                <h3>CSS</h3><span class="bar1 animate__animated animate__bounceInLeft  "><span
+                        class="css"></span></span>
+            </li>
+            <li>
+                <h3>JAVASCRIPT</h3><span class="bar1 animate__animated animate__bounceInLeft "><span
+                        class="js"></span></span>
+            </li>
+            <li>
+                <h3>PYTHON</h3><span class="bar1 animate__animated animate__bounceInLeft"><span
+                        class="python"></span></span>
+            </li>
+        </div>
+    </section>
+    <section class="team" id="team">
+        <div class="spacing">dhdhdhdh</div>
+        <div class="contactcontainer">
+            <h1>My <span>Team</span></h1>
+        </div>
+        <div class="team-container">
+            <div class="card-container">
+                <div class="card">
+                    <figure class="front">
+                        <img src="Samiul.jpg" alt="" >
+                        Front-End <span>Developer</span>
+                    </figure>
+                    <figure class="back">
+                        Samiul is one of my team member with excellent skill.
+                         His front end developing skill is extra-ordinary.
+                    </figure>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <figure class="front">
+                        <img src="ania.png" alt="" >
+                        Back-End <span>Developer</span>
+                    </figure>
+                    <figure class="back">
+                        Ania is one of my team member with excellent skill.
+                         Her back end developing skill is extra-ordinary.
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="spacing">dhdhdhdh</div>
+        <div class="contactcontainer">
+            <h1>Contact <span>Me</span></h1>
+        </div>
+        <div class="contactboxandform">
+            <div class="contactbox">
+                <h1 class="getintouch">GET IN <span>TOUCH</span> </h1>
+                <i class="phone fa fa-phone"><span class="number">+8801521258123</span></i>
+                <i class=" env fa fa-envelope"><span
+                        class="email">aniachow66@gmail.com</span></i>
+                <i class=" location fa fa-map-marker" ><span
+                        class="address">Mirpur,Dhaka</span></i>
+                <div class="socialicons">
+                    <a href="https://www.facebook.com/profile.php?id=100003164965915" target="_main"><i
+                            class="facebook fa fa-facebook-f"></i></a>
+                    <a href="https://github.com/Sameeeul" target="_main"><i class=" github fa fa-github"
+                            ></i></a>
+                    <a href="https://www.instagram.com/ania_chowdhury/" target="_main"><i class=" insta fa fa-instagram"
+                           ></i></a>
+                </div>
+            </div>
+            <div class="contactusform">
+                <div id="error"></div>
+                <form class="form" action="https://formsubmit.co/samichowdhury328@gmail.com" method="POST" target="_main" onsubmit="validation()">
+                    <input id="Name"  type="text" name="Name" placeholder="Name" required autocomplete="off">
+                    <br>
+                    <input id="Email" type="email" name="Email" placeholder="Email" required autocomplete="off">
+                    <br>
+                    <input id="Phone" type="Phone" name="Phone" placeholder="Phone" required autocomplete="off">
+                    <br>
+                    <Textarea id="Message" cols="30" rows="05" name="Message" placeholder="Your Message" required autocomplete="off"></Textarea>
+                    <button class="submit_button" type="submit">Sub<span>mit</span></button>
+               </form>
+            </div>
+        </div>
+    </section>
+   
+    <script src="main.js"></script>
+</body>
+
+</html>
